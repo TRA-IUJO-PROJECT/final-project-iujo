@@ -1,0 +1,26 @@
+body{
+    box-sizing: 0px;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+
