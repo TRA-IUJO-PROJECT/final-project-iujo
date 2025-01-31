@@ -1,25 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barriecito&family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+
 body{
     box-sizing: 0px;
     margin: auto;
+    background: #000
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #f8f9fa;
+    padding: 20px;
+    background: #000
+}
+
+.navbar .logo {
+    display: flex; /* Usar flexbox para alinear el ícono y el texto */
+    align-items: center; /* Alinear verticalmente */
+    margin-left: 100px; /* Mantener el mismo espacio que tenías en h2 */
+}
+
+.navbar .logo i {
+    font-size: 24px; /* Ajustar el tamaño del ícono */
+}
+
+.navbar h2{
+    color: #fff;
+    margin-left: 20px;
+    font-family: "Playwrite IN", serif;
 }
 
 .nav-menu{
     display: flex;
     list-style: none;
-    cursor: pointer;
     padding-right: 50px;
+    margin-top: 30px;
 }
 
-.nav-menu li a{
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    font-family: "Playwrite IN", serif;
     text-decoration: none;
-    margin-right: 50px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-2px) scale(1.1);
+}
+
+.title-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 60px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.title-medio {
+    font-family: "Playwrite IN", serif;
+    font-size: 40px;
+    text-justify: auto;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: "Playwrite IN", serif;
+    font-size: 24px;
+    color: #333; 
 }
 
 
+.footer-help h4{
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 65px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.footer-help a{
+    text-decoration: none;
+}
+
+.footer-help h4:hover{
+    color: #cacaca;
+}
