@@ -1,8 +1,14 @@
 function registrarUsuario(){
 
     debugger
-    const email = document.getElementById('registerName').value;
+    const email = document.getElementById('registerEmail').value; //Obtengo el valor de lo que coloca el usuario
     const password = document.getElementById('registerPassword').value;
+
+
+    if(email === "" && password === ""){
+        alert(`Por favor complete el formulario`);
+        return;
+    }
 
     if(!validateEmail(email)){
         alert(`Debe ser un correo`);
