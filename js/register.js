@@ -3,9 +3,11 @@ function registrarUsuario(){
     debugger
     const email = document.getElementById('registerEmail').value; //Obtengo el valor de lo que coloca el usuario
     const password = document.getElementById('registerPassword').value;
+    const name = document.getElementById('name').value;
+    const lastname = document.getElementById('lastname').value;
 
 
-    if(email === "" || password === ""){
+    if(email === "" || password === "" || name === "" || lastname === ""){
         alert(`Por favor complete el formulario.`);
         return;
     }
@@ -17,7 +19,9 @@ function registrarUsuario(){
 
     let usuario = {
         correo: email,
-        clave: password
+        clave: password,
+        nombre: name,
+        apellido: lastname
     }
 
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];

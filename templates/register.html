@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina final IUJO</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles-register.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script defer src="/js/register.js"></script>
+    <script defer src="/bootstrap/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-    
-    <section>
 
-        <div class="register-complete">
-            <form>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="registerEmail" placeholder="name@example.com">
-                    <label for="registerEmail">Correo electrónico</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control" id="registerPassword" placeholder="Password">
-                    <label for="registerPassword">Contraseña</label>
-                  </div>
-                <button id="save" class="btn btn-primary mt-3">Registrarse</button>
-              </form>
+    <section>
+        <div class="register-complete p-3">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ejem... Luis">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Ejem... Ortíz">
+                </div>
+                <div class="col-12">
+                    <label for="registerEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="registerEmail" placeholder="Ejem... luisortiz@email.com">
+                </div>
+                <div class="col-12">
+                    <label for="registerPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="registerPassword" placeholder="Ingrese su contraseña...">
+                </div>
+                <div class="col-12 d-grid">
+                    <button id="save" class="btn btn-primary">Registrarse</button>
+                </div>
+                <span>Ya tengo una cuenta... <a href="/templates/login.html">Iniciar sesión</a></span>
+            </form>
         </div>
     </section>
 
-    <script src="/js/register.js"></script>
-    <!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
+
 
 </body>
 </html>

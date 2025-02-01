@@ -8,7 +8,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .register-complete{
@@ -16,7 +16,7 @@ section{
     width: 500px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 10px blue;
+    box-shadow: 0 0 5px 10px lightblue;
 }
 
 .register-complete{
@@ -24,4 +24,38 @@ section{
     justify-content: center;
     align-items: center;
     height: 50vh;
+}
+
+@media (max-width: 768px){
+    .register-complete {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .col-md-6 {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
+    .register-complete {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .col-md-6 {
+        grid-column: 1 / -1;
+    }
+
+    .register-complete {
+        padding: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }

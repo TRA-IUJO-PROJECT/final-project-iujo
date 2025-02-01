@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles-login.css">
     <title>Pagina final IUJO</title>
+    <script defer src="/js/login.js"></script>
+    <script defer src="/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body> 
 
-    
 
-    <button><a href="/templates/register.html">volver a registrarse</a></button>
+    <section>
+        <div class="login-complete p-3">
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="loginEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="Ejem... luisortiz@email.com">
+                </div>
+                <div class="col-12">
+                    <label for="loginPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Ingrese su contraseña...">
+                </div>
+                <div class="col-12 d-grid">
+                    <button id="save" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+                <span>¿No tienes una cuenta creada? <a href="/templates/register.html">Registrarse</a></span>
+            </form>
+        </div>
+    </section>
 
 </body>
 </html>
