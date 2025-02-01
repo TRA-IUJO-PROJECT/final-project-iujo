@@ -5,13 +5,13 @@ function registrarUsuario(){
     const password = document.getElementById('registerPassword').value;
 
 
-    if(email === "" && password === ""){
-        alert(`Por favor complete el formulario`);
+    if(email === "" || password === ""){
+        alert(`Por favor complete el formulario.`);
         return;
     }
 
     if(!validateEmail(email)){
-        alert(`Debe ser un correo`);
+        alert(`Debe ser un correo válido`);
         return;
     }
 
@@ -25,15 +25,16 @@ function registrarUsuario(){
     let siUser = usuarios.some(u => u.correo === email);
 
     if(siUser){
-        alert(`Ya existe`)
+        alert(`El usuario '${email}' ya existe, por favor intente con otro.`)
         return;
     }
 
-    usuarios.push(usuario);
-
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    usuarios.push(usuario); 
     
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
     alert(`Usuario registrado con exito`);
+    window.location.href = '/templates/login.html';
 
 }
 
