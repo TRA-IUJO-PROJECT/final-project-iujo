@@ -21,12 +21,13 @@ function inicioSesionUsuario() {
 
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    const userLogin = usuarios.some(u => u.correo === emailSesion);
-    const passwordLogin = usuarios.some(u => u.clave === passwordSesion);
+    const userLogin = usuarios.find(u => u.correo === emailSesion && u.clave === passwordSesion);
 
-    if(userLogin && passwordLogin){
+    if(userLogin){
         alert(`Usuario autenticado correctamente`);
+        localStorage.setItem('usuarioLogueado', JSON.stringify(userLogin));
         window.location.href = '/templates/home.html';
+        history.replaceState(null, null, '/templates/home.html');
     }else{
         alert(`Correo no existe o contraseña no válida.`)
     }

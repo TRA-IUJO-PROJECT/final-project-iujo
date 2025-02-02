@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barriecito&family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
 
@@ -49,7 +48,6 @@ body{
     color: #fff;
     font-weight: bold;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);    border-radius: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
     transition: transform 0.3s ease;

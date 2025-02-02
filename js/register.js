@@ -39,6 +39,7 @@ function registrarUsuario(){
 
     alert(`Usuario registrado con exito`);
     window.location.href = '/templates/login.html';
+    history.replaceState(null, null, '/templates/home.html');
 
 }
 

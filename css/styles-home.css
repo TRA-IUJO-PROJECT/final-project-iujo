@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+
+body{
+    box-sizing: 0px;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #000
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.navbar .logo i {
+    font-size: 24px;
+}
+
+.navbar h2{
+    color: #fff;
+    margin-left: 20px;
+    font-family: "Playwrite IN", serif;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-2px) scale(1.1);
+}
