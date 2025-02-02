@@ -1,6 +1,6 @@
 body{
-    box-sizing: 0px;
-    margin: auto;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 section{
@@ -15,7 +15,7 @@ section{
     width: 500px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0 0 5px 10px lightblue;
+    box-shadow: 0 0 10px 10px rgb(166, 166, 167);
 }
 
 .register-complete{
@@ -30,9 +30,45 @@ section{
     justify-content: center;
 }
 
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #000
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.navbar .logo i {
+    font-size: 24px;
+}
+
+.navbar h2{
+    color: #fff;
+    margin-left: 20px;
+    font-family: "Playwrite IN", serif;
+}
+
 @media (min-height: 800px) {
     .register-complete {
+        height: 550px;
+    }
+}
+
+
+@media (min-width: 300px) {
+
+    .register-complete{
         height: 500px;
+    }
+
+    .inicio{
+        margin-bottom: 5px;
     }
 }
 
@@ -81,5 +117,5 @@ section{
 
     .register-complete {
         padding: 0.5rem;
-    }
+    } 
 }

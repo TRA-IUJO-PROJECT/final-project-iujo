@@ -13,33 +13,41 @@
 </head>
 <body>
 
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-book" style="color: #fff;"></i>
+            <h2>My Library Online</h2>
+        </div>
+    </nav>
+
+
     <section>
         <div class="register-complete p-3">
             <form class="row g-3">
                 <div class="title-register">
                     <h1>Registrarme</h1>
                 </div>
-                <div class="col-md-6">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" placeholder="Ejem... Luis">
-                </div>
-                <div class="col-md-6">
-                    <label for="lastname" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Ejem... Ortíz">
-                </div>
-                <div class="col-12">
-                    <label for="registerEmail" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="registerEmail" placeholder="Ejem... luisortiz@email.com">
-                </div>
-                <div class="col-12">
-                    <label for="registerPassword" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="registerPassword" placeholder="Ingrese su contraseña...">
-                </div>
-                <div class="col-12 d-grid">
-                    <button id="save" class="btn btn-primary">Registrarse</button>
-                </div>
-                <span>Ya tengo una cuenta... <a href="/templates/login.html">Iniciar sesión</a></span>
-                <span><a href="/index.html">Volver al inicio</a></span>
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ejem... Luis">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastname" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Ejem... Ortíz">
+                    </div>
+                    <div class="col-12">
+                        <label for="registerEmail" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="registerEmail" placeholder="Ejem... luisortiz@email.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="registerPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="registerPassword" placeholder="Ingrese su contraseña...">
+                    </div>
+                    <div class="col-12 d-grid">
+                        <button id="save" class="btn btn-primary">Registrarse</button>
+                    </div>
+                    <span>Ya tengo una cuenta... <a href="/templates/login.html">Iniciar sesión</a></span>
+                    <span><a href="/index.html" class="inicio">Volver al inicio</a></span>
             </form>
         </div>
     </section>
