@@ -1,7 +1,6 @@
 body{
     box-sizing: 0px;
     margin: auto;
-    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);    border-radius: 20px;
 }
 
 section{
@@ -26,14 +25,33 @@ section{
     height: 50vh;
 }
 
-@media (max-width: 768px){
+.title-register{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-height: 800px) {
+    .register-complete {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .register-complete {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .register-complete {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
     .register-complete {
         width: 95%;
         padding: 1.5rem;
-    }
-
-    .col-md-6 {
-        grid-column: 1 / -1;
     }
 }
 
@@ -44,18 +62,24 @@ section{
 
     .register-complete {
         width: 95%;
-        padding: 1.5rem;
-    }
-
-    .col-md-6 {
-        grid-column: 1 / -1;
-    }
-
-    .register-complete {
         padding: 1rem;
     }
 
     .btn {
         width: 100%;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .form-label {
+        font-size: 0.8rem;
+    }
+
+    .register-complete {
+        padding: 0.5rem;
     }
 }

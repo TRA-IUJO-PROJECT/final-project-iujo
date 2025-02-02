@@ -1,7 +1,6 @@
 body{
     box-sizing: 0px;
     margin: auto;
-    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 }
 
 section{
@@ -24,6 +23,11 @@ section{
     justify-content: center;
     align-items: center;
     height: 50vh;
+}
+
+.title-login{
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 768px){
