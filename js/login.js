@@ -27,7 +27,6 @@ function inicioSesionUsuario() {
         alert(`Usuario autenticado correctamente`);
         localStorage.setItem('usuarioLogueado', JSON.stringify(userLogin));
         window.location.href = '/templates/home.html';
-        history.replaceState(null, null, '/templates/home.html');
     }else{
         alert(`Correo no existe o contraseña no válida.`)
     }
