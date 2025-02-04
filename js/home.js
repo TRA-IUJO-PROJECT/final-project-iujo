@@ -23,13 +23,6 @@ function mostrarBienvenida(){
 
 let libros = [
     {
-        url: 'https://www.turnerlibros.com/wp-content/uploads/2021/02/ejemplo.pdf',
-        titulo: 'libro 1',
-        descripcion: 'Este es el libro 1 conoceras algo fino',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Nicol%C3%A1s_Maduro_in_2023_%28cropped%29.jpg'
-    },
-
-    {
         url: 'https://www.jugandoainvertir.com.ar/descargas/Padre-Rico-Padre-Pobre.pdf',
         titulo: 'libro 2',
         descripcion: 'Este es el libro 2 conoceras algo fino',
@@ -307,8 +300,18 @@ let libros = [
 ];
 
 
+const abrirPDF = (url, target = '_blank') => {
+    const link = document.createElement('a');
+    
+    link.href = url;
+    link.target = target;
+    link.dispatchEvent(new MouseEvent('click'));
+};
+
   function mostrarLibros(){
     const contenedor = document.getElementById('contenedorLibro');
+    contenedor.innerHTML = '';
+
     libros.forEach(libro => {
         const col = document.createElement('div');
         col.className = 'col-md-4';
@@ -319,7 +322,7 @@ let libros = [
                 <div class="card-body">
                     <h5 class="card-title">${libro.titulo}</h5>
                     <p class="card-text">${libro.descripcion}</p>
-                    <button href="${libro.url}" class="btn btn-primary" download="libro1.pdf">Descargar</button>
+                    <button class="btn btn-primary" onclick="abrirPDF('${libro.url}')" target="_blank">Leer más</button>
                 </div>
             </div>
         `;
@@ -327,8 +330,6 @@ let libros = [
         contenedor.appendChild(col);
     });
 }
-
-
 
 function confirmLogout(event) {
     event.preventDefault();

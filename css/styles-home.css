@@ -31,3 +31,11 @@ body{
 .dropdown {
     margin-right: 150px; 
 }
+
+.row {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.col-md-4 {
+    padding: 10px;
+}
