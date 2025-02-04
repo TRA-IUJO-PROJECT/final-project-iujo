@@ -1,0 +1,35 @@
+body{
+    box-sizing: 0px;
+    margin: auto;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.space{
+    padding: 20px;
+    text-align: justify;
+}
+
+.help{
+    background-color: #e4e4e4;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgb(0, 0, 0);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
