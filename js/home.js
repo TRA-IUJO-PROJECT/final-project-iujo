@@ -24,142 +24,142 @@ function mostrarBienvenida(){
 let libros = [
     {
         url: '../assets/pdf/Padre-Rico-Padre-Pobre.pdf',
-        titulo: 'libro 2',
-        descripcion: 'Este es el libro 2 conoceras algo fino',
+        titulo: 'Padre rico padre pobre',
+        descripcion: '"Padre Rico, Padre Pobre" de Robert Kiyosaki es un libro sobre educación financiera. Compara las lecciones sobre el dinero de dos figuras paternas: su propio padre (padre pobre) y el padre de su mejor amigo (padre rico). El libro destaca la importancia de adquirir activos que generen ingresos pasivos, invertir sabiamente y tener una mentalidad empresarial para alcanzar la libertad financiera.',
         img: '../assets/img/imagen-1.jpg'
     },
 
     {
-        url: 'https://www.shalon.edu.ec/aula/pluginfile.php/899/mod_resource/content/1/La_culpa_es_de_la_vaca.pdf',
-        titulo: 'libro 3',
-        descripcion: 'Este es el libro 3 conoceras algo fino',
+        url: '../assets/pdf/La_culpa_es_de_la_vaca.pdf',
+        titulo: 'La culpa es de la  vaca',
+        descripcion: '"La culpa es de la vaca" es una recopilación de cuentos y reflexiones de diferentes autores, editada por Jaime Lopera y Marta Inés Bernal. El libro presenta historias inspiradoras y motivadoras que resaltan valores como la responsabilidad, la solidaridad y la superación personal. A través de anécdotas y relatos, busca transmitir lecciones de vida y fomentar el crecimiento personal y profesional.',
         img: '../assets/img/imagen-2.jpg'
     },
     {
-        url: 'https://www.diversual.com/img/blog/90/kamasutra-diversual.pdf',
-        titulo: 'libro 4',
-        descripcion: 'Este es el libro 4 conoceras algo fino',
-        img: 'https://www.elejandria.com/covers/Kamasutra_el_arte_de_amar-Anonimo-lg.png'
+        url: '../assets/pdf/kamasutra-diversual.pdf',
+        titulo: 'kamasutra',
+        descripcion: 'El "Kamasutra" es un antiguo texto hindú sobre el arte del amor y la sexualidad, atribuido a Vatsyayana. Además de posiciones sexuales, abarca el cortejo, el matrimonio y el comportamiento social, promoviendo relaciones armoniosas y respetuosas.',
+        img: '../assets/img/imagen-3.jpg'
     },
     {
-        url: 'http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Odisea.pdf',
-        titulo: 'libro 5',
-        descripcion: 'Este es el libro 5 conoceras algo fino',
-        img: 'https://www.elejandria.com/covers/La_Odisea-Homero-lg.png'
+        url: '../assets/pdf/Odisea.pdf',
+        titulo: 'La odisea',
+        descripcion: 'conoce mas sobre nuestro libro',
+        img: '../assets/img/imagen-4.jpg'
     },
     {
-        url: 'http://www.cutonala.udg.mx/sites/default/files/adjuntos/el_camino_de_las_lagrimas_0.pdf',
-        titulo: 'libro 6',
-        descripcion: 'Este es el libro 6 conoceras algo fino',
-        img: 'https://m.media-amazon.com/images/I/91WBBwBbquL.jpg'
+        url: '../assets/pdf/El camino de las lágrimas.pdf',
+        titulo: 'el camino de las lagrimas',
+        descripcion: 'conoce mas sobre nuestro libro',
+        img: '../assets/img/imagen-5.jpg'
     },
     {
-        url: 'https://drive.google.com/file/d/1ZIjtZtgAFBVdK-m5Mes9JMXg7J0OUzAs/view',
-        titulo: 'libro 7',
+        url: '../assets/pdf/corazon.pdf',
+        titulo: 'Corazon',
         descripcion: 'Este es el libro 7 conoceras algo fino',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFd6e531-AjL4_VrMG2vjVSoRlfAaV1h5KA&s'
+        img: '../assets/img/imagen-6.jpg'
     },
     {
-        url: 'https://drive.google.com/file/d/1iHn4ZwwZ7adCZ-5vnWvjA1p0TxzRE6rf/view',
-        titulo: 'libro 8',
+        url: '../assets/pdf/3 cuentos.pdf',
+        titulo: '3 cuentos de las mil y una noches',
         descripcion: 'Este es el libro 8 conoceras algo fino',
-        img: 'https://pictures.abebooks.com/inventory/22734954421.jpg'
+        img: '../assets/img/imagen-7.jpg'
     },
     {
-        url: 'https://drive.google.com/file/d/1nrjaWIpw9DxmzADan94o6Em6t3O6dAi-/view',
-        titulo: 'libro 9',
+        url: '../assets/pdf/10 cuentos.pdf',
+        titulo: 'las mil y una noches en 10 cuentos',
         descripcion: 'Este es el libro 9 conoceras algo fino',
-        img: 'https://www.aique.com.ar/wp-content/uploads/tapa_mil_y_una_noches_0.jpg'
+        img: '../assets/img/imagen-8.jpg'
     },
     {
-        url: 'https://drive.google.com/file/d/1pKr3ffyGVnzBoQH99dQwXWjQQkFINL_6/view',
-        titulo: 'libro 10',
+        url: '../assets/pdf/caballeria roja.pdf',
+        titulo: 'La caballleria roja',
         descripcion: 'Este es el libro 10 conoceras algo fino',
-        img: 'https://traficantes.net/sites/default/files/styles/large/public/book_covers/9788417146030.gif?itok=-GkiI_vj'
+        img: '../assets/img/imagen-9.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/17MGVnDkhHtW65TuguWocyDT3SVDCSLVc/view',
-        titulo: 'libro 11',
+        url: '../assets/pdf/alberto.pdf',
+        titulo: 'Albert Salvarus',
         descripcion: 'Este es el libro 11 conoceras algo fino',
-        img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1516973255i/38209152.jpg'
+        img: '../assets/img/imagen-10.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1MVlXT27v2MXRdAcTEd7mpMWdlQsYzN_Q/view',
-        titulo: 'libro 12',
+        url: '../assets/pdf/el asesinato.pdf',
+        titulo: 'Un asesinato',
         descripcion: 'Este es el libro 12 conoceras algo fino',
-        img: 'https://www.elejandria.com/covers/Un_asesinato-Anton_Chejov-lg.png'
+        img: '../assets/img/imagen-11.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1ewlxEm-fXXCxZfFSrI0f1pYyYDL_nBJI/view',
-        titulo: 'libro 13',
+        url: '../assets/pdf/el jardin de los.pdf',
+        titulo: 'El jardin de cerezos',
         descripcion: 'Este es el libro 13 conoceras algo fino',
-        img: 'https://info-biblioteca.mincyt.gob.ve/wp-content/uploads/2024/03/El_jardin_de_los_cerezos-Anton_Chejov-md.png'
+        img: '../assets/img/imagen-12.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1pDwoZZuPMaCqZSSUVZI9oZdn5NopGhTc/view',
-        titulo: 'libro 14',
+        url: '../assets/pdf/el pabellon.pdf',
+        titulo: 'El pabellon 6',
         descripcion: 'Este es el libro 14 conoceras algo fino',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5c0DvHOFmo71CZtQvGgH2kQvAObt82Cu6UQ&s'
+        img: '../assets/img/imagen-13.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1FpceuSJRKYFa-D3OaDZxV6-9LhYeBZIf/view',
-        titulo: 'libro 15',
+        url: '../assets/pdf/el misterio de copper.pdf',
+        titulo: 'El misterio de copper beeches',
         descripcion: 'Este es el libro 15 conoceras algo fino',
-        img: 'https://info-biblioteca.mincyt.gob.ve/wp-content/uploads/2024/05/El_misterio_de_Copper_Beeches-Conan_Doyle_Arthur-md.jpg'
+        img: '../assets/img/imagen-14.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1DjvkQKGnSyRsFjzSN71bh3Z_WPMP-psC/view',
-        titulo: 'libro 16',
+        url: '../assets/pdf/el misterio del valle.pdf',
+        titulo: 'El misterio del valle boscombe',
         descripcion: 'Este es el libro 16 conoceras algo fino',
-        img: 'https://www.elejandria.com/covers/El_misterio_del_valle_Boscombe-Conan_Doyle_Arthur-lg.png'
+        img: '../assets/img/imagen-15.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1XxSFTv9uPrNMUJ65jVsGFXM4cRhV6qMd/view',
-        titulo: 'libro 17',
+        url: '../assets/pdf/el signo de los 4.pdf',
+        titulo: 'el signo de los 4',
         descripcion: 'Este es el libro 17 conoceras algo fino',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCbfoNJv2o4Qe7QoGXEmo7DKIdZfVYZM6NGQ&s'
+        img: '../assets/img/imagen-16.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1Wd578Y6LODMMaIKWXIvGz0ucJIf-mVMG/view',
-        titulo: 'libro 18',
+        url: '../assets/pdf/la teoria de la evolucion.pdf',
+        titulo: 'el origen de las especies',
         descripcion: 'Este es el libro 18 conoceras algo fino',
-        img: 'https://imagessl4.casadellibro.com/a/l/s5/54/9788467029154.webp'
+        img: '../assets/img/imagen-17.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1kU9G0MmO4fa1NwFn-bZAeqmOv4dldH9E/view',
-        titulo: 'libro 19',
+        url: '../assets/pdf/espanto en las alturas.pdf',
+        titulo: 'espanto en las alturas',
         descripcion: 'Este es el libro 19 conoceras algo fino',
-        img: 'https://static.audioteka.com/es/images/products/arthur-conan-doyle/espanto-en-las-alturas-duze.jpg'
+        img: '../assets/img/imagen-18.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1UxReqcl7MXZ2Z5e67xhKhGWYze4KLqio/view',
-        titulo: 'libro 20',
+        url: '../assets/pdf/tartarin.pdf',
+        titulo: 'tartarin de tarascon',
         descripcion: 'Este es el libro 20 conoceras algo fino',
-        img: 'https://www.blackcat-cideb.com/uploads/2020/02/COVER_Tartarin-de-Tarascon_b088179d5c03ba3eefe3cc07caa87efd.jpg'
+        img: '../assets/img/imagen-19.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1ygo_eaqz-_2O_dZdg02J1C_jGMG8NiaA/view',
-        titulo: 'libro 21',
+        url: '../assets/pdf/proceso por asesinato.pdf',
+        titulo: 'proceso de un asesinato',
         descripcion: 'Este es el libro 21 conoceras algo fino',
-        img: 'https://info-biblioteca.mincyt.gob.ve/wp-content/uploads/2024/05/Proceso_por_asesinato-Charles_Dickens-md.jpg'
+        img: '../assets/img/imagen-20.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1A5Tb38dOQAVDkhqlo5Ub5JQXprvyoD1y/view',
-        titulo: 'libro 22',
+        url: '../assets/pdf/',
+        titulo: 'noches blancas',
         descripcion: 'Este es el libro 22 conoceras algo fino',
-        img: 'https://quelibroleo.com/images/libros/libro_1433936204.jpg'
+        img: '../assets/img/'
     },
 
     {
