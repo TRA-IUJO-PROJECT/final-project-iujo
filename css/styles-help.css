@@ -33,3 +33,91 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #000
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.navbar .logo i {
+    font-size: 24px;
+}
+
+.navbar h2{
+    color: #fff;
+    margin-left: 20px;
+    font-family: "Playwrite IN", serif;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    font-family: "Playwrite IN", serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-2px) scale(1.1);
+}
+
+
+@media (max-width: 1200px) {
+    .navbar .logo {
+        margin-left: 50px;
+    }
+
+    .nav-menu {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        margin-left: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .nav-menu li {
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu a {
+        padding: 8px 16px;
+    }
+}
