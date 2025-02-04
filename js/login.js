@@ -35,8 +35,7 @@ function inicioSesionUsuario() {
 
 }
 
-
-
+//Esta funcion lo que hace es validar si el email que ingrese el usuario es valido o no
 function validateEmail(email){
     debugger;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
