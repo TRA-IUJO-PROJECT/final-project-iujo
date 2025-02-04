@@ -23,7 +23,7 @@ function mostrarBienvenida(){
 
 let libros = [
     {
-        url: 'https://www.jugandoainvertir.com.ar/descargas/Padre-Rico-Padre-Pobre.pdf',
+        url: '../assets/pdf/Padre-Rico-Padre-Pobre.pdf',
         titulo: 'libro 2',
         descripcion: 'Este es el libro 2 conoceras algo fino',
         img: '../assets/img/imagen-1.jpg'
