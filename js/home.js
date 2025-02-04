@@ -156,143 +156,143 @@ let libros = [
     },
 
     {
-        url: '../assets/pdf/',
+        url: '../assets/pdf/noches blancas.pdf',
         titulo: 'noches blancas',
         descripcion: 'Este es el libro 22 conoceras algo fino',
-        img: '../assets/img/'
+        img: '../assets/img/imagen22.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1ioNBeB2R1TbwLPS5A4nbXqpFvCV3snS-/view',
-        titulo: 'libro 23',
+        url: '../assets/pdf/Reliquia.pdf',
+        titulo: 'Reliquia',
         descripcion: 'Este es el libro 23 conoceras algo fino',
-        img: 'https://m.media-amazon.com/images/I/61ZovwpTBxL._AC_UF894,1000_QL80_.jpg'
+        img: '../assets/img/imagen23.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1MC9Cs2-wsFUc5ssfK3SL4NeQr9ZM8-9b/view',
-        titulo: 'libro 24',
+        url: '../assets/pdf/Anillo.pdf',
+        titulo: 'El anillo',
         descripcion: 'Este es el libro 24 conoceras algo fino',
-        img: 'https://m.media-amazon.com/images/I/71jwYRu29RL._UF1000,1000_QL80_.jpg'
+        img: '../assets/img/imagen24.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1aS1dF6HyZvFfhVvV6dCVHCkoIXpyPZHH/view',
-        titulo: 'libro 25',
+        url: '../assets/pdf/Iliada.pdf',
+        titulo: 'la iliada',
         descripcion: 'Este es el libro 25 conoceras algo fino',
-        img: 'https://editorialverbum.es/wp-content/uploads/2020/07/La-Iliada.jpg'
+        img: '../assets/img/imagen25.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/10rmaLi6DDuj1RWl5Jy9GV5U8B2Ws-ZCK/view',
-        titulo: 'libro 26',
+        url: '../assets/pdf/Bug_Jargal-Victor_Hugo.pdf',
+        titulo: 'Bug Jargal',
         descripcion: 'Este es el libro 26 conoceras algo fino',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Bug-Jargal_%281881%29_%28cover%29.jpg'
+        img: '../assets/img/imagen26.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1EfdxZG1aq2ew9UB2coUJ-1Xt7VVNE4Oo/view',
-        titulo: 'libro 27',
+        url: '../assets/pdf/Dracula_Stoker.pdf',
+        titulo: 'dracula',
         descripcion: 'Este es el libro 27 conoceras algo fino',
-        img: 'https://http2.mlstatic.com/D_NQ_NP_804342-MLV76520695042_052024-O.webp'
+        img: '../assets/img/imagen27.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1-phpMbKQLhMuUbcm1CLO96JVdS8lIuMp/view',
-        titulo: 'libro 28',
+        url: '../assets/pdf/Casa_del_juez-Stoker.pdf',
+        titulo: 'La casa del juez',
         descripcion: 'Este es el libro 28 conoceras algo fino',
-        img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422968570i/24816119.jpg'
+        img: '../assets/img/imagen28.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1_rBkIloYIwECwFVRVg7NJOXp3scWb9eo/view',
-        titulo: 'libro 29',
+        url: '../assets/pdf/Jardinero.pdf',
+        titulo: 'El jardinero',
         descripcion: 'Este es el libro 29 conoceras algo fino',
-        img: 'https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/625453050e7891f12d61d21e_6034d7d1f3e0f5f391b2b21b_El-jardinero-r-tagore-editorial-alma.jpeg'
+        img: '../assets/img/imagen29.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1vovEtc_cPE7UMH_sv5Ci_ZD6fF7gXRyh/view',
-        titulo: 'libro 30',
+        url: '../assets/pdf/Elfos.pdf',
+        titulo: 'los Elfos',
         descripcion: 'Este es el libro 30 conoceras algo fino',
-        img: 'https://cdn.kobo.com/book-images/c655b796-647c-473c-9ac4-c5b7e40fbcd5/1200/1200/False/los-elfos-2.jpg'
+        img: '../assets/img/imagen30.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1KUV3aO5iY1Ar-bGZ8p_W71Pit0M7eGzs/view',
-        titulo: 'libro 31',
+        url: '../assets/pdf/OrigenMal.pdf',
+        titulo: 'El origen del mal',
         descripcion: 'Este es el libro 31 conoceras algo fino',
-        img: 'https://www.elejandria.com/covers/El_origen_del_mal-Tolstoi_Leon-lg.png'
+        img: '../assets/img/imagen31.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1EB3u4Vg-TlNvruXolwap6l4QrdqNiRNr/view',
-        titulo: 'libro 32',
+        url: '../assets/pdf/MuerteIvanIlich.pdf',
+        titulo: 'La muerte de Ivan ilich',
         descripcion: 'Este es el libro  conoceras algo fino',
-        img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1682110599i/136140018.jpg'
+        img: '../assets/img/imagen32.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1U2zTW9pLG5P9rBY3-qW9zUTPa4LPuncV/view',
-        titulo: 'libro 33',
+        url: '../assets/pdf/DemetrioRudin.pdf',
+        titulo: 'Demetrio Rudin',
         descripcion: 'Este es el libro 33 conoceras algo fino',
-        img: 'https://elemblob.blob.core.windows.net/media/demetrio-rudin5aa1d3b26da23_300h.jpg'
+        img: '../assets/img/imagen33.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1QFno5G8ifvLQpHd5US5EEE-r5raTNE-F/view',
-        titulo: 'libro 34',
+        url: '../assets/pdf/DeTierraLuna.pdf',
+        titulo: 'De la tierra a luna',
         descripcion: 'Este es el libro 34 conoceras algo fino',
-        img: 'https://www.planetadelibros.com/usuaris/libros/fotos/300/original/portada_de-la-tierra-a-la-luna_julio-verne_201907171323.jpg'
+        img: '../assets/img/imagen34.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1hpsVZ_3SBETwyJS3TBKWHNEUXyJmKX1V/view',
-        titulo: 'libro 35 ',
+        url: '../assets/pdf/El_castillo_de_los_Carpatos-Julio_Verne.pdf',
+        titulo: 'El castillo de los carpatos',
         descripcion: 'Este es el libro 35 conoceras algo fino',
-        img: 'https://www.alianzaeditorial.es/imagenes/libros/grande/9788491817710-el-castillo-de-los-carpatos.jpg'
+        img: '../assets/img/imagen35.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1832u4EvX_mUWUXsSQzIDNfa-LosVLpm7/view',
-        titulo: 'libro 36',
+        url: '../assets/pdf/ElEternoAdan.pdf',
+        titulo: 'El eterno Adan',
         descripcion: 'Este es el libro 36 conoceras algo fino',
-        img: 'https://humildelector.com/wp-content/uploads/2021/01/el-eterno-adan-julio-verne.jpg?w=250'
+        img: '../assets/img/imagen36.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1iw_fg3loRHZozeJv9yo0NTZq2gx3bado/view',
-        titulo: 'libro 37',
+        url: '../assets/pdf/Candido_Voltaire.pdf',
+        titulo: 'Candido',
         descripcion: 'Este es el libro 37 conoceras algo fino',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Candide1759.jpg/1200px-Candide1759.jpg'
+        img: '../assets/img/imagen37.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1SdMCkgX1SkK0qhosBJX8MPzZOtnBOXIr/view',
-        titulo: 'libro 38',
+        url: '../assets/pdf/MaravillosoCuento.pdf',
+        titulo: 'Un maravilloso cuento',
         descripcion: 'Este es el libro 38 conoceras algo fino',
-        img: 'https://m.media-amazon.com/images/I/81phy+qV+CL._UF1000,1000_QL80_.jpg'
+        img: '../assets/img/imagen38.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/19b5TvslCEKkCjxr_vqYTBPAWXi_bg0cO/view',
-        titulo: 'libro 39',
+        url: '../assets/pdf/El_fantasma_de_Canterville-Oscar_Wilde.pdf',
+        titulo: 'El fantasma de canterville',
         descripcion: 'Este es el libro 39 conoceras algo fino',
-        img: 'https://info-biblioteca.mincyt.gob.ve/wp-content/uploads/2024/07/El_fantasma_de_Canterville-Wilde_Oscar-md.png'
+        img: '../assets/img/imagen39.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/1PpcJphYhERP3N39kmBK4DulnhBpMTvax/view',
-        titulo: 'libro 40',
+        url: '../assets/pdf/Una partida de ajedrez.pdf',
+        titulo: 'una partida de ajedrez',
         descripcion: 'Este es el libro 40 conoceras algo fino',
-        img: 'https://m.media-amazon.com/images/I/81PKOR8tZIL._UF894,1000_QL80_.jpg'
+        img: '../assets/img/imagen40.jpg'
     },
 
     {
-        url: 'https://drive.google.com/file/d/15ZSvrf04Gi4RH717WR7Or_GSY2ydEJlh/view',
-        titulo: 'libro 41',
+        url: '../assets/pdf/Elcolorsurgidodelespacio.pdf',
+        titulo: 'El color del espacio',
         descripcion: 'Este es el libro 41 conoceras algo fino',
-        img: 'https://imgv2-1-f.scribdassets.com/img/document/145900168/original/6be9f410a3/1?v=1'
+        img: '../assets/img/imagen41.jpg'
     },
 
 
