@@ -4,5 +4,5 @@ document.addEventListener('DOMContentLoaded', function(e){
 })
 
 function mantenerHome(){
-    history.replaceState(null, null, '/templates/home.html'); //Mantiene la redireccion hacia el home.html
+    history.replaceState(null, null, '/templates/home.html');
 }

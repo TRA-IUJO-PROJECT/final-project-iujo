@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function(e){
     mostrarBienvenida();
     mostrarLibros();
     const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
-    console.log(usuarioLogueado.nombre);
     
     if (!usuarioLogueado) {
         window.location.href = '/templates/login.html';
