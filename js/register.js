@@ -12,7 +12,9 @@ function registrarUsuario(){
         return;
     }
 
-    if(!validateEmail(email)){
+    let validarEmail = validateEmail(email);
+
+    if(!validarEmail){
         alert(`Debe ser un correo válido`);
         return;
     }
@@ -44,12 +46,14 @@ function registrarUsuario(){
 }
 
 function validateEmail(email){
+    debugger
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
 
 document.getElementById('save').addEventListener('click', function(e){
+    debugger;
     e.preventDefault();
 
     registrarUsuario();
