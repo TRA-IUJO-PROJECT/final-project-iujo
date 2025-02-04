@@ -27,6 +27,13 @@ let libros = [
         titulo: 'libro 1',
         descripcion: 'Este es el libro 1 conoceras algo fino',
         img: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Nicol%C3%A1s_Maduro_in_2023_%28cropped%29.jpg'
+    },
+
+    {
+        url: 'https://www.jugandoainvertir.com.ar/descargas/Padre-Rico-Padre-Pobre.pdf',
+        titulo: 'libro 2',
+        descripcion: 'Este es el libro 1 conoceras algo fino',
+        img: 'https://images.cdn1.buscalibre.com/fit-in/520x520/ba/03/ba03f4a313723b3cb5f139ff65ccd2aa.jpg'
     }
 ];
 
