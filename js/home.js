@@ -26,14 +26,14 @@ let libros = [
         url: 'https://www.jugandoainvertir.com.ar/descargas/Padre-Rico-Padre-Pobre.pdf',
         titulo: 'libro 2',
         descripcion: 'Este es el libro 2 conoceras algo fino',
-        img: 'https://images.cdn1.buscalibre.com/fit-in/520x520/ba/03/ba03f4a313723b3cb5f139ff65ccd2aa.jpg'
+        img: '../assets/img/imagen-1.jpg'
     },
 
     {
         url: 'https://www.shalon.edu.ec/aula/pluginfile.php/899/mod_resource/content/1/La_culpa_es_de_la_vaca.pdf',
         titulo: 'libro 3',
         descripcion: 'Este es el libro 3 conoceras algo fino',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SV9hK_lD4-oLBJaU_jsCnj8F-qxh4hcWdg&s'
+        img: '../assets/img/imagen-2.jpg'
     },
     {
         url: 'https://www.diversual.com/img/blog/90/kamasutra-diversual.pdf',
