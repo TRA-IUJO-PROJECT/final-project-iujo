@@ -1,7 +1,7 @@
 body{
     box-sizing: 0px;
     margin: auto;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    background-color: #f1e4dc;
 }
 
 .text{
@@ -31,7 +31,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .navbar{

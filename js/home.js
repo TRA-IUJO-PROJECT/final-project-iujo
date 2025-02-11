@@ -37,28 +37,49 @@ function mostrarLibros(){
         col.className = 'col-md-4';
 
         col.innerHTML = `
-        <div class="card mb-4">
-            <img src="${libro.img}" class="card-img-top" alt="${libro.titulo}">
-            <div class="card-body">
-                <h5 class="card-title">${libro.nombre}</h5>
-                <p class="card-text">${libro.descripcion}</p>
-                <button class="btn btn-primary" onclick="abrirPDF('${libro.url}')" target="_blank">Leer más</button>
-                <button class="btn btn-secondary" onclick="toggleComentarios(${index})">Ver más</button>
-                
-                <div id="comentarios-${index}" style="display: none;">
-                    <h6>Comentarios:</h6>
-                    <ul id="lista-comentarios-${index}"></ul>
-                    <input type="text" id="comentario-input-${index}" placeholder="Escribe un comentario" />
-                    <button class="btn btn-success" onclick="agregarComentario(${index})">Agregar Comentario</button>
+            <div class="card mb-4">
+                <img src="${libro.img}" class="card-img-top" alt="${libro.titulo}">
+                <div class="card-body">
+                    <h5 class="card-title">${libro.nombre}</h5>
+                    <p class="card-text">${libro.descripcion}</p>
+                    <button class="btn btn-primary" onclick="abrirPDF('${libro.url}')" target="_blank">Leer libro</button>
+                    <button class="btn btn-secondary" onclick="toggleComentarios(${index})">Comentar</button>
+
+                    <button class="btn btn-success" onclick="darLike(${index})" style="width: 130px"><i class="fas fa-thumbs-up"></i> <span>${libro.likes || 0}</span></button>
+                    <button class="btn btn-danger" onclick="darDislike(${index})" style="width: 130px"><i class="fas fa-thumbs-down"></i> <span>${libro.dislikes || 0}</span></button>
+
+                    <br>
+                    <br>
+                    <div id="comentarios-${index}" style="display: none;">
+                        <h6>Comentarios:</h6>
+                        <ul id="lista-comentarios"></ul>
+                        <input type="text" id="comentario-input" placeholder="Escribe un comentario" />
+                        <button class="btn btn-success" onclick="agregarComentario(${index})">Agregar Comentario</button>
+                    </div>
                 </div>
+                <button class="btn btn-danger" onclick="deleteBook(${index})">Eliminar</button>
             </div>
-            <button class="btn btn-danger" onclick="eliminarLibro(${index})">Eliminar</button>
-        </div>
+
     `;
 
         contenedor.appendChild(col);
     });
 }
+
+function darLike(index) {
+    const libros = JSON.parse(localStorage.getItem('libros')) || [];
+    libros[index].likes = (libros[index].likes || 0) + 1; 
+    localStorage.setItem('libros', JSON.stringify(libros));
+    mostrarLibros();
+}
+
+function darDislike(index) {
+    const libros = JSON.parse(localStorage.getItem('libros')) || [];
+    libros[index].dislikes = (libros[index].dislikes || 0) + 1;  
+    localStorage.setItem('libros', JSON.stringify(libros));
+    mostrarLibros();
+}
+
 
 function toggleComentarios(index) {
     debugger;
@@ -68,8 +89,8 @@ function toggleComentarios(index) {
 
 function agregarComentario(index) {
     debugger;
-    const comentarioInput = document.getElementById(`comentario-input-${index}`);
-    const listaComentarios = document.getElementById(`lista-comentarios-${index}`);
+    const comentarioInput = document.getElementById(`comentario-input`);
+    const listaComentarios = document.getElementById(`lista-comentarios`);
 
     const nuevoComentario = comentarioInput.value.trim();
 
@@ -83,7 +104,7 @@ function agregarComentario(index) {
     }
 }
 
-function deleteBtn(index){
+function deleteBook(index){
     const libros = JSON.parse(localStorage.getItem('libros'))
     
     libros.splice(index, 1)
@@ -148,7 +169,9 @@ function nameImg(){
         autor: author,
         descripcion: description,
         url: pdfUrl,
-        img: imgUrl
+        img: imgUrl,
+        likes: 0,
+        dislikes: 0  
     }
 
     const libros = JSON.parse(localStorage.getItem('libros')) || [];
@@ -157,15 +180,38 @@ function nameImg(){
 
     localStorage.setItem('libros', JSON.stringify(libros))
     borrarCampos();
+    restablecerNombrePdf();
+    restablecerNombreImg();
     mostrarLibros();
 }
 
-const abrirPDF = (url, target = '_blank') => {
+function restablecerNombrePdf(){
+    const input = document.getElementById('pdfInput');
+    const fileNameDisplay = document.getElementById('fileName');
+
+    if (input.files.length > 0) {
+        fileNameDisplay.textContent = `No hay pdf elegido`;
+    }
+}
+
+
+function restablecerNombreImg(){
+    debugger;
+    const inputImg = document.getElementById('imgInput');
+    const fileNameDisplay = document.getElementById('imgName');
+
+    if (inputImg.files.length > 0) {
+        fileNameDisplay.textContent = `No hay imagen elegida`;
+    }
+}
+
+const abrirPDF = (url) => {
     const link = document.createElement('a');
-    
     link.href = url;
-    link.target = target;
-    link.dispatchEvent(new MouseEvent('click'));
+    link.target = '_blank'; 
+    document.body.appendChild(link); 
+    link.click();
+    document.body.removeChild(link);
 };
 
 function borrarCampos() {

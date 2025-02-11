@@ -1,52 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
 
-body{
-    box-sizing: 0px;
-    margin: auto;
+body {
+    box-sizing: border-box;
+    margin: 0;
     background-color: #f1e4dc;
 }
 
-.inputLibro{
+.inputLibro {
     display: flex;
     flex-direction: column;
-    margin-left: 650px;
 }
 
-.attach{
-    display: flex;
-}
-
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: #000000
+    background: #000;
 }
 
 .navbar .logo {
     display: flex;
     align-items: center;
-    margin-left: 100px;
 }
 
-.navbar .logo i {
-    font-size: 24px;
-}
-
-.navbar h2{
+.navbar h2 {
     color: #fff;
     margin-left: 20px;
-    font-family: "Playwrite IN", serif;
 }
 
 .dropdown {
-    margin-right: 150px; 
+    margin-right: 15px; 
 }
 
 .row {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 0;
+    margin-left: 0;
 }
+
 .col-md-4 {
     padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    height: 100%; 
+    max-width: 300px;
+    margin: auto; 
+}
+
+.card img {
+    width: 100%; 
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1; 
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.attach {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.text-dark {
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .inputLibro {
+        margin-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        margin: 10px 0;
+    }
+}
+
+.form-control {
+    width: 100%; 
+}
+
+.btn-primary, .btn-success, .btn-secondary, .btn-danger {
+    width: 100%;
 }
