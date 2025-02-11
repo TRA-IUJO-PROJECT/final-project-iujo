@@ -7,6 +7,7 @@ function registrarUsuario(){
     const lastname = document.getElementById('lastname').value;
 
 
+    //Verificas si esta vacio algun campo
     if(email === "" || password === "" || name === "" || lastname === ""){
         alert(`Por favor complete el formulario.`);
         return;

@@ -3,7 +3,17 @@
 body{
     box-sizing: 0px;
     margin: auto;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    background-color: #e0e0e0;
+}
+
+.inputLibro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 650px;
+}
+
+.attach{
+    display: flex;
 }
 
 .navbar{
